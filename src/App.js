@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Portfolio from './Portfolio'; 
+import Portfolio from './pages/Portfolio.js'; 
 
 function App() {
   useEffect(() => {
@@ -27,7 +27,10 @@ function App() {
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>

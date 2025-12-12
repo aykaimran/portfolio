@@ -292,11 +292,11 @@ body {
 }
 
 .profile-image .actual-profile-img {
-  width: 100%;       /* Make the image span the full width of the 300x300 container */
-  height: 100%;      /* Make the image span the full height of the container */
-  display: block;    /* Ensures correct sizing */
-  object-fit: cover; /* ESSENTIAL: This property scales the image to cover the 300x300 area, cropping as needed. */
-  border-radius: 20px; /* Ensures the image respects the container's rounded corners */
+  width: 100%;     
+  height: 100%;      
+  display: block;    
+  object-fit: cover; 
+  border-radius: 20px; 
 }
 @keyframes float {
   0%, 100% {
@@ -684,4 +684,182 @@ body {
   .section-header h2 {
     font-size: 2rem;
   }
+}
+
+/* Add these to your App.css */
+
+/* Hero Socials */
+.hero-socials {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+.hero-socials .social-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.hero-socials .social-link:hover {
+  color: #61dafb; /* React Blue or your theme color */
+}
+.separator {
+  margin: 0 10px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* About Details Grid */
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.detail-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Or your dark theme text color */
+  border-bottom: 2px solid #61dafb;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-list li {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.tech-badge-container {
+    margin-bottom: 10px;
+}
+.tech-badge {
+    background: rgba(97, 218, 251, 0.1);
+    color: #61dafb;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* --- Common Section Styles --- */
+.common-section {
+    padding: 5rem 2rem;
+    background-color: #0a0a0a; /* Dark background */
+}
+
+/* --- Grid Layout for Cards --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Info Card Style (Shared by Exp, Edu, Achievements) --- */
+.info-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #333;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: #61dafb; /* React Blue Highlight */
+}
+
+/* Card Header (Icon & Date) */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+}
+
+.card-date {
+    font-size: 0.85rem;
+    color: #888;
+    background: #2a2a2a;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Card Typography */
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #61dafb; /* Accent Color */
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.card-desc {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Special Badge for Education Highlights */
+.card-badge {
+    margin-top: auto; /* Pushes to bottom */
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: #ffd700; /* Gold color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Hero Social Icons Container */
+.hero-socials {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center; /* Center the icons */
+  gap: 30px; /* Space between icons */
+}
+
+/* Individual Icon Styles */
+.social-icon {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2rem; /* Controls the size of the icon */
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Effects */
+.social-icon:hover {
+  color: #61dafb; /* React Blue (or choose your preferred color) */
+  transform: translateY(-5px); /* Moves up slightly on hover */
+  filter: drop-shadow(0 0 8px rgba(97, 218, 251, 0.6)); /* Adds a glow */
 }
