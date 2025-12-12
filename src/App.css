@@ -1,26 +1,26 @@
 :root {
   /* Your color palette */
-  --teal-light: #B6FFFA;    /* Light teal */
-  --teal-medium: #98E4FF;   /* Medium teal/blue */
-  --blue-light: #80B3FF;    /* Light blue */
-  --blue-dark: #687EFF;     /* Darker blue */
+  --teal-light: #5CC8C6;    /* Light teal */
+  --teal-medium: #4AA5E1;   /* Medium teal/blue */
+  --blue-light: #357ECF;    /* Light blue */
+  --blue-dark: #2A5BB1;     /* Darker blue */
   
   /* Background colors */
   --bg-primary: #0a0a0a;
   --bg-secondary: #111827;  /* Dark blue-gray */
   
   /* Text colors */
-  --text-primary: #ffffff;
+  --text-primary: #f0f0f0;
   --text-secondary: #d1d5db;
   
   /* Derived colors */
   --card-bg: rgba(17, 24, 39, 0.8);
-  --border-color: rgba(104, 126, 255, 0.2);
+ --border-color: rgba(42, 91, 177, 0.2);
   
-  /* Gradient combinations */
-  --gradient-primary: linear-gradient(135deg, #687EFF, #80B3FF);
-  --gradient-secondary: linear-gradient(135deg, #80B3FF, #98E4FF);
-  --gradient-accent: linear-gradient(135deg, #98E4FF, #B6FFFA);
+/* Gradient combinations (will automatically use the new colors) */
+  --gradient-primary: linear-gradient(135deg, var(--blue-dark), var(--blue-light));
+  --gradient-secondary: linear-gradient(135deg, var(--blue-light), var(--teal-medium));
+  --gradient-accent: linear-gradient(135deg, var(--teal-medium), var(--teal-light));
 }
 
 * {
