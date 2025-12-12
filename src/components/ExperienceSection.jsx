@@ -37,8 +37,9 @@ function ExperienceSection() {
                     <div key={exp.id} className="info-card">
                         {/* Header: Date and Icon */}
                         <div className="card-header-line">
+                            <FaBriefcase className="card-icon" style={{ marginRight: '15px' }} />
                             <span className="card-date">{exp.date}</span>
-                            <FaBriefcase className="card-icon" />
+                            
                         </div>
                         
                         {/* Title & Subtitle */}

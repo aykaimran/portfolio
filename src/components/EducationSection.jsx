@@ -39,14 +39,15 @@ function EducationSection() {
                 {educationData.map((edu) => (
                     <div key={edu.id} className="info-card">
                         <div className="card-header-line">
+                            <FaGraduationCap className="card-icon" style={{ marginRight: '15px' }} />
+
                             <span className="card-date">{edu.date}</span>
-                            <FaGraduationCap className="card-icon" />
                         </div>
-                        
+
                         <h3 className="card-title">{edu.degree}</h3>
                         <h4 className="card-subtitle">{edu.institution}</h4>
                         <p className="card-desc">{edu.details}</p>
-                        
+
                         {/* Gold Badge for achievements */}
                         {edu.badge && <span className="card-badge">{edu.badge}</span>}
                     </div>

@@ -32,7 +32,7 @@ function AboutSection() {
                     
                     <div className="about-text">
                         <p>
-                            I am a Software Engineering student at <strong>FAST-NUCES</strong> 
+                            I am a Software Engineering student at <strong>FAST-NUCES </strong> 
                             and a passionate Full-Stack Developer. I specialize in building modern web applications 
                             and integrating AI/NLP models into practical solutions.
                         </p>
@@ -60,51 +60,6 @@ function AboutSection() {
                             <p>3.67 / 4.00</p>
                         </div>
                     </div>
-
-                    {/* Detailed Info Grid
-                    <div className="details-grid">
-                        <div className="detail-column">
-                            <h3>🎓 Education</h3>
-                            <ul className="detail-list">
-                                <li>
-                                    <strong>BS Software Engineering</strong> <br/> 
-                                    FAST-NUCES (2023-Present)
-                                </li>
-                                <li>
-                                    <strong>A Levels (Computer Science)</strong> <br/> 
-                                    KIMS (92%)
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="detail-column">
-                            <h3>💼 Experience</h3>
-                            <ul className="detail-list">
-                                <li>
-                                    <strong>MERN Intern</strong> @ Code5 Technologies <br/>
-                                    <small>Built AI Resume Builder & Admin Dashboards</small>
-                                </li>
-                                <li>
-                                    <strong>Instructor</strong> @ Polymath Kids <br/>
-                                    <small>Teaching C++ & Web Dev</small>
-                                </li>
-                                <li>
-                                    <strong>Lab Demonstrator/TA</strong> @ FAST-NUCES
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="detail-column">
-                            <h3>🌟 Achievements</h3>
-                            <ul className="detail-list">
-                                <li>First Position (Gold Medal) in SE Dept</li>
-                                <li>Merit Scholarship Holder (2019-2023)</li>
-                                <li>Dean's Honor List (Spring 24, Fall 25)</li>
-                                <li>CodeBees Competitive Programming Cert</li>
-                            </ul>
-                        </div>
-                    </div> */}
-
                 </div>
             </div>
         </section>
