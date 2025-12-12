@@ -48,7 +48,7 @@ const projectsData = [
 
 function ProjectsSection() {
     return (
-        <section className="articles-section" id="projects">
+        <section className="about-section" id="projects">
             <div className="section-header">
                 <h2>FEATURED PROJECTS</h2>
                 <div className="section-underline"></div>

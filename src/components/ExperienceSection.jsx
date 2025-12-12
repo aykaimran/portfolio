@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaBriefcase } from 'react-icons/fa';
 
 const experienceData = [
     {
@@ -17,7 +18,7 @@ const experienceData = [
     },
     {
         id: 3,
-        role: "Teaching Assistant / Lab Demonstrator",
+        role: "Teaching Assistant",
         company: "FAST-NUCES",
         date: "Aug 2025 – Present",
         description: "Assisting students with Digital Logic Design and Assembly Language concepts, managing grading, and supporting laboratory tasks."
@@ -26,7 +27,7 @@ const experienceData = [
 
 function ExperienceSection() {
     return (
-        <section className="common-section" id="experience">
+        <section className="about-section" id="experience">
             <div className="section-header">
                 <h2>EXPERIENCE</h2>
                 <div className="section-underline"></div>
@@ -34,12 +35,17 @@ function ExperienceSection() {
             <div className="cards-grid">
                 {experienceData.map((exp) => (
                     <div key={exp.id} className="info-card">
-                        <div className="card-header">
-                            <span className="card-icon">💼</span>
+                        {/* Header: Date and Icon */}
+                        <div className="card-header-line">
                             <span className="card-date">{exp.date}</span>
+                            <FaBriefcase className="card-icon" />
                         </div>
+                        
+                        {/* Title & Subtitle */}
                         <h3 className="card-title">{exp.role}</h3>
                         <h4 className="card-subtitle">{exp.company}</h4>
+                        
+                        {/* Description */}
                         <p className="card-desc">{exp.description}</p>
                     </div>
                 ))}

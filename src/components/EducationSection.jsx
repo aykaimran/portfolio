@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGraduationCap } from 'react-icons/fa';
 
 const educationData = [
     {
@@ -7,44 +8,47 @@ const educationData = [
         institution: "FAST-NUCES, Lahore",
         date: "Aug 2023 - Present",
         details: "GPA: 3.67/4.00",
-        highlight: "Department Topper"
+        badge: "Department Topper"
     },
     {
         id: 2,
-        degree: "A Levels (Computer Science)",
+        degree: "A Levels (Comp Sci)",
         institution: "KIMS",
         date: "2021 - 2023",
         details: "1012/1100 marks (92%)",
-        highlight: "High Achiever"
+        badge: "High Achiever"
     },
     {
         id: 3,
-        degree: "O Levels (Science Group)",
+        degree: "O Levels (Science)",
         institution: "KIMS",
         date: "2019 - 2021",
         details: "832/900 marks (92.44%)",
-        highlight: "Scholarship Holder"
+        badge: "Scholarship"
     }
 ];
 
 function EducationSection() {
     return (
-        <section className="common-section" id="education">
+        <section className="about-section" id="education">
             <div className="section-header">
                 <h2>EDUCATION</h2>
                 <div className="section-underline"></div>
             </div>
             <div className="cards-grid">
                 {educationData.map((edu) => (
-                    <div key={edu.id} className="info-card education-card">
-                        <div className="card-header">
-                            <span className="card-icon">🎓</span>
+                    <div key={edu.id} className="info-card">
+                        <div className="card-header-line">
                             <span className="card-date">{edu.date}</span>
+                            <FaGraduationCap className="card-icon" />
                         </div>
+                        
                         <h3 className="card-title">{edu.degree}</h3>
                         <h4 className="card-subtitle">{edu.institution}</h4>
                         <p className="card-desc">{edu.details}</p>
-                        <span className="card-badge">{edu.highlight}</span>
+                        
+                        {/* Gold Badge for achievements */}
+                        {edu.badge && <span className="card-badge">{edu.badge}</span>}
                     </div>
                 ))}
             </div>

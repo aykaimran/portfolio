@@ -863,3 +863,93 @@ body {
   transform: translateY(-5px); /* Moves up slightly on hover */
   filter: drop-shadow(0 0 8px rgba(97, 218, 251, 0.6)); /* Adds a glow */
 }
+/* --- Shared Grid (Matches your articles-grid) --- */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/* --- The Card Style (Exact copy of article-card) --- */
+.info-card {
+  background: var(--card-bg); /* Dark semi-transparent background */
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(104, 126, 255, 0.3);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.5s ease-out backwards;
+  
+  /* Ensure consistent left-alignment like projects */
+  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--blue-dark);
+  box-shadow: 0 10px 30px rgba(104, 126, 255, 0.2);
+}
+
+/* --- Typography to match Project Cards --- */
+
+/* 1. Date/Header at top (Teal color) */
+.card-header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-date {
+  color: var(--teal-medium);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card-icon {
+  color: var(--teal-light);
+  font-size: 1.2rem;
+}
+
+/* 2. Main Title (White, larger) */
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 5px; /* Less space to allow for subtitle */
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* 3. Subtitle (Company/School - Light Blue) */
+.card-subtitle {
+  font-size: 1rem;
+  color: var(--teal-light); 
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* 4. Description (Grey, readable) */
+.card-desc {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 5. Special Badge (for Gold Medal, etc.) */
+.card-badge {
+  display: inline-block;
+  margin-top: auto; /* Pushes it to the bottom */
+  padding: 5px 10px;
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  align-self: flex-start;
+  margin-top: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+}
