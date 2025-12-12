@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🌸 Ayka Imran - Software Engineer  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?lines=Software+Engineer+%7C+Web+Developer;Full+Stack+Developer;Educator+%7C+Tech+Mentor;Always+Building+Cool+Things...&center=true&width=500&height=45" />
+</p>
 
-## Available Scripts
+<p align="center">  
+💻 Software Engineering Student @ FAST-NUCES (5th Semester) 
+<br>
+👩‍🏫 Teaching: Web Development & C++  
+<br>
+🎯 Passionate about AI-powered apps, full-stack engineering, and clean UI/UX  
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm Ayka, a builder, problem-solver, and someone who believes any bug can be fixed with  
+**Google, caffeine, and a little emotional damage.**  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I love creating full-stack applications, integrating AI into everyday workflows,  
+and teaching students how to write code that actually works on the first try (sometimes).  
 
-### `npm test`
+📫 **Contact:** aykaimran28@gmail.com  
+🌍 **LinkedIn:** [linkedin.com/in/ayka-imran](https://www.linkedin.com/in/ayka-imran)  
+🧑‍💻 **GitHub:** [github.com/aykaimran](https://github.com/aykaimran)  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Tech Stack  
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=cpp,java,js,python,react,nodejs,spring,mongodb,mysql,html,css,git,linux,flask" />
+</p>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧩 Featured Projects  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔹 **AI Resume Builder**  
+AI-powered full-stack resume builder using React, Node.js, MongoDB, Flask + Ollama.  
+🔗 Repo: [ResumeBuilder](https://github.com/aykaimran/ResumeBuilder.git)
 
-### `npm run eject`
+### 🔹 **Rentinel**  
+Property, rent, and tenant management portal (React + Spring Boot).  
+🔗 Repo: [Rentinel](https://github.com/aykaimran/Rentinel.git)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔹 **AVWM**  
+Ordering, reservation, and kitchen workflow app (React + Node.js + SQL).  
+🔗 Repo: [AVWM](https://github.com/aykaimran/AVWM.git)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 **Energy Consumption Planner**  
+Desktop electricity usage optimizer (C++ + SQL + .NET).  
+🔗 Repo: [PeakSaver](https://github.com/aykaimran/PeakSaver.git)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ <!--## 📊 GitHub Insights  -->
 
-## Learn More
+ <!--<p align="center">-->
+  <!-- <img height="165" src="https://github-readme-stats.vercel.app/api?username=aykaimran&show_icons=true&theme=rose_pine" /> -->
+ <!--  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aykaimran&layout=compact&theme=rose_pine" />-->
+ <!--</p>-->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌱 Currently  
+- Building scalable full-stack applications  
+- Exploring applied AI & conversational systems  
+- Teaching programming fundamentals  
+- Surviving university… barely 😭  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+✨ Thanks for stopping by, feel free to explore my repos or reach out! ✨  
+</p>
