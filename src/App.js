@@ -3,9 +3,6 @@ import './App.css';
 import Portfolio from './pages/Portfolio.js'; 
 
 function App() {
-  useEffect(() => {
-    fetch('https://api.countapi.xyz/hit/ayka-portfolio/home');
-  }, []);
   
   useEffect(() => {
     const handleMouseMove = (e) => {
