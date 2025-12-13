@@ -4,6 +4,10 @@ import Portfolio from './pages/Portfolio.js';
 
 function App() {
   useEffect(() => {
+    fetch('https://api.countapi.xyz/hit/ayka-portfolio/home');
+  }, []);
+  
+  useEffect(() => {
     const handleMouseMove = (e) => {
       const cursorTrail = document.createElement('div');
       cursorTrail.className = 'cursor-trail';
