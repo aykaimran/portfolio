@@ -26,14 +26,6 @@ const projectsData = [
         status: "Dec 2025",
         github: "https://github.com/aykaimran/LogiSim"
     },
-    // { 
-    //     id: 4, 
-    //     title: "ClearWay", 
-    //     tech: "React, Python", 
-    //     excerpt: "Visualizes real-time smog levels on maps and suggests optimal routes based on air quality.",
-    //     status: "In Progress",
-    //     github: "#"
-    // },
     {
         id: 4,
         title: "Rentinel",

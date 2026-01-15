@@ -5,18 +5,17 @@ function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault(); 
     const formData = new FormData(e.target);
 
     try {
-      // Send data to FormSubmit
       await fetch('https://formsubmit.co/ajax/aykaimran28@gmail.com', {
         method: 'POST',
         body: formData,
       });
 
       setSubmitted(true); // Show thank you message
-      e.target.reset();   // Optional: reset form
+      e.target.reset();   
     } catch (error) {
       alert('Oops! Something went wrong.');
       console.error(error);

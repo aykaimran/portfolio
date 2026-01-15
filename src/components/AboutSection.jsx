@@ -2,7 +2,6 @@ import React from 'react';
 import myProfileImage from '../assets/me.jpg';
 
 function AboutSection() {
-    // Tech stack from CV
     const techStack = ['React', 'Node.js', 'Python', 'Java', 'C/C++', 'PostgreSQL','MongoDB', 'NLP', 'Spring Boot', 'JUnit', 'MERN Stack', 'Java Swing', '.NET', 'Flask','Git'];
 
     return (

@@ -7,19 +7,15 @@
   --blue-light: #357ECF;    /* Light blue */
   --blue-dark: #2A5BB1;     /* Darker blue */
   
-  /* Background colors */
   --bg-primary: #0a0a0a;
   --bg-secondary: #111827;  /* Dark blue-gray */
   
-  /* Text colors */
   --text-primary: #f0f0f0;
   --text-secondary: #d1d5db;
   
-  /* Derived colors */
   --card-bg: rgba(17, 24, 39, 0.8);
  --border-color: rgba(42, 91, 177, 0.2);
   
-/* Gradient combinations (will automatically use the new colors) */
   --gradient-primary: linear-gradient(135deg, var(--blue-dark), var(--blue-light));
   --gradient-secondary: linear-gradient(135deg, var(--blue-light), var(--teal-medium));
   --gradient-accent: linear-gradient(135deg, var(--teal-medium), var(--teal-light));
