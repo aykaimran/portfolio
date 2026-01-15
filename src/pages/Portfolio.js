@@ -29,12 +29,12 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection.jsx';
 import AboutSection from '../components/AboutSection.jsx';
-import ExperienceSection from '../components/ExperienceSection.jsx'; // New
+import ExperienceSection from '../components/ExperienceSection.jsx';
 import ProjectsSection from '../components/ProjectsSection.jsx';
-import EducationSection from '../components/EducationSection.jsx'; // New
-import AchievementsSection from '../components/AchievementsSection.jsx'; // New
+import EducationSection from '../components/EducationSection.jsx'; 
+import AchievementsSection from '../components/AchievementsSection.jsx';
 import ContactSection from '../components/ContactSection.jsx'; 
-
+import LanguagesSection from '../components/LanguagesSection.jsx'; 
 function Portfolio() {
     return (
         <>
@@ -43,6 +43,7 @@ function Portfolio() {
             
             {/* Grouping Work & Projects */}
             <ExperienceSection />
+             <LanguagesSection /> 
             <ProjectsSection />
             
             {/* Grouping Academic & Awards */}
