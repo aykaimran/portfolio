@@ -1597,3 +1597,14 @@ body {
 a {
   text-decoration: none;
 }
+.footer {
+  text-align: center;
+  padding: 20px 10px;
+  color: var(--text-secondary); /* matches your theme */
+  background: var(--bg-secondary); /* or transparent */
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0;
+}

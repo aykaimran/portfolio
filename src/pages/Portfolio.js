@@ -8,6 +8,7 @@ import EducationSection from '../components/EducationSection.jsx';
 import AchievementsSection from '../components/AchievementsSection.jsx';
 import ContactSection from '../components/ContactSection.jsx'; 
 import LanguagesSection from '../components/LanguagesSection.jsx'; 
+import Footer from '../components/Footer.jsx';
 function Portfolio() {
     return (
         <>
@@ -24,6 +25,7 @@ function Portfolio() {
             <AchievementsSection />
             
             <ContactSection />
+            <Footer />
         </>
     );
 }
