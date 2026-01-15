@@ -22,21 +22,34 @@ const achievementsData = [
     },
     {
         id: 4,
+        title: "High Achiever Awards",
+        context: "KIMS College",
+        desc: "Secured five High Achiever Awards (2018, 2019, 2021, 2022, 2023) in 8th grade, o and a levels."
+    },
+    {
+        id: 5,
         title: "CodeBees Certification",
         context: "Competitive Programming",
         desc: "Java Programming Certification (Oct 2025)."
     },
     {
-        id: 5,
+        id: 6,
         title: "Co-Head of Decor",
         context: "IEEE RAS",
         desc: "Led society initiatives and organized major events."
     },
     {
-        id: 6,
+        id: 7,
         title: "Head of Security",
         context: "Sports Fest 2023",
         desc: "First female appointee to lead security operations."
+    },
+    {
+        id: 8,
+        title: "Graphic Designing & UI/UX Course",
+        context: "NS Training (SMC-PRIVATE) Limited",
+        desc: "Completed professional training in graphic design and UI/UX."
+
     }
 ];
 

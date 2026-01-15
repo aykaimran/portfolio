@@ -22,18 +22,18 @@ const projectsData = [
         tech: "Java Swing, PostgreSQL", 
         excerpt: "Desktop app for logic circuit simulation (AND, OR, NOT). Supports saving projects and truth table generation.",
         status: "Dec 2025",
-        github: "https://github.com/tayyabafatima08/Logi-Sim"
+        github: "https://github.com/aykaimran/LogiSim"
     },
+    // { 
+    //     id: 4, 
+    //     title: "ClearWay", 
+    //     tech: "React, Python", 
+    //     excerpt: "Visualizes real-time smog levels on maps and suggests optimal routes based on air quality.",
+    //     status: "In Progress",
+    //     github: "#"
+    // },
     { 
         id: 4, 
-        title: "ClearWay", 
-        tech: "React, Python", 
-        excerpt: "Visualizes real-time smog levels on maps and suggests optimal routes based on air quality.",
-        status: "In Progress",
-        github: "#"
-    },
-    { 
-        id: 5, 
         title: "Rentinel", 
         tech: "React, Spring Boot", 
         excerpt: "Property management system for streamlining interactions, rent tracking, and lease management.",
@@ -41,7 +41,7 @@ const projectsData = [
         github: "https://github.com/aykaimran/Rentinel"
     },
     { 
-        id: 6, 
+        id: 5, 
         title: "PeakSaver", 
         tech: "C++, .NET, SQL", 
         excerpt: "Desktop application to track electricity usage and optimize scheduling for peak/off-peak hours.",
