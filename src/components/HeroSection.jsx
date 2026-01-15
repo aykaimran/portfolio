@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaFilePdf } from 'react-icons/fa';
 
 function HeroSection() {
     const canvasRef = useRef(null);
@@ -127,7 +128,13 @@ function HeroSection() {
                         {[
                             { icon: <FaGithub />, href: "https://github.com/aykaimran", label: "GitHub" },
                             { icon: <FaLinkedin />, href: "https://www.linkedin.com/in/ayka-imran", label: "LinkedIn" },
-                            { icon: <FaEnvelope />, href: "mailto:aykaimran28@gmail.com", label: "Email" }
+                            { icon: <FaEnvelope />, href: "mailto:aykaimran28@gmail.com", label: "Email" },
+                            {
+                                icon: <FaFilePdf />,
+                                href: `${process.env.PUBLIC_URL}/Ayka_Imran_CV.pdf`,
+                                label: "Resume"
+                            }
+
                         ].map((social, index) => (
                             <a
                                 key={index}

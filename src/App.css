@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
 :root {
   /* Your color palette */
@@ -38,6 +38,350 @@ body {
   overflow-x: hidden;
 }
 
+/* ==================== LOADING SCREEN ENHANCEMENTS ==================== */
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.8s ease 0.2s, visibility 0s 1s;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading Name Animation */
+.loading-name {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(104, 126, 255, 0.5);
+  position: fixed;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+.loading-name.centered {
+  font-size: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: centeredGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes centeredGlow {
+  from {
+    text-shadow: 0 0 20px rgba(104, 126, 255, 0.5),
+                 0 0 40px rgba(104, 126, 255, 0.3);
+  }
+  to {
+    text-shadow: 0 0 30px rgba(104, 126, 255, 0.8),
+                 0 0 50px rgba(104, 126, 255, 0.6),
+                 0 0 70px rgba(104, 126, 255, 0.4);
+  }
+}
+
+.loading-name.moving-to-top {
+  font-size: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveNameToTop 1.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes moveNameToTop {
+  0% {
+    font-size: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  30% {
+    font-size: 4rem;
+  }
+  60% {
+    font-size: 3rem;
+  }
+  80% {
+    font-size: 2.5rem;
+  }
+  100% {
+    font-size: 2.5rem;
+    top: 30px;
+    left: 40px;
+    transform: translate(0, 0);
+  }
+}
+
+.loading-name.at-top {
+  font-size: 2.5rem;
+  top: 30px;
+  left: 40px;
+  opacity: 1;
+}
+
+/* Loading Bar */
+.loading-bar-container {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.loading-bar-container.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.loading-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 6px;
+  background: rgba(42, 91, 177, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid rgba(42, 91, 177, 0.3);
+}
+
+.loading-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg,
+    var(--blue-dark),
+    var(--blue-light),
+    var(--teal-medium),
+    var(--teal-light)
+  );
+  border-radius: 3px;
+  animation: loadingProgress 2.5s ease-in-out forwards;
+}
+
+@keyframes loadingProgress {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.loading-text {
+  margin-top: 20px;
+  color: var(--teal-light);
+  font-size: 1.2rem;
+  opacity: 0.8;
+  animation: pulseText 2s ease-in-out infinite;
+}
+
+@keyframes pulseText {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ==================== MAIN CONTENT ==================== */
+
+.main-content {
+  position: relative;
+  opacity: 0;
+  animation: fadeInContent 0.8s ease forwards 0.5s;
+}
+
+@keyframes fadeInContent {
+  to {
+    opacity: 1;
+  }
+}
+
+.main-content.visible {
+  opacity: 1;
+}
+
+/* Navbar Logo */
+.navbar .logo {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.navbar .logo.visible {
+  opacity: 1;
+}
+
+/* Content animations */
+.hero-section {
+  animation: slideUpFromBottom 1s ease-out 0.3s both;
+}
+
+.about-section,
+.experience-section,
+.projects-section,
+.education-section,
+.achievements-section,
+.contact-section {
+  animation: slideUpFromBottom 1s ease-out 0.5s both;
+}
+
+@keyframes slideUpFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== FIX NAVBAR POSITION ==================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(104, 126, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+/* Ensure content starts below navbar */
+.hero-section {
+  margin-top: 80px; /* This matches navbar height */
+}
+
+/* ==================== RESPONSIVE LOADING ==================== */
+
+@media (max-width: 1024px) {
+  .loading-name.centered,
+  .loading-name.moving-to-top {
+    font-size: 4rem;
+  }
+  
+  @keyframes moveNameToTop {
+    0% {
+      font-size: 4rem;
+    }
+    100% {
+      font-size: 2.2rem;
+      top: 25px;
+      left: 30px;
+    }
+  }
+  
+  .loading-name.at-top {
+    font-size: 2.2rem;
+    top: 25px;
+    left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loading-name.centered,
+  .loading-name.moving-to-top {
+    font-size: 3.5rem;
+  }
+  
+  @keyframes moveNameToTop {
+    0% {
+      font-size: 3.5rem;
+    }
+    100% {
+      font-size: 2rem;
+      top: 20px;
+      left: 20px;
+    }
+  }
+  
+  .loading-name.at-top {
+    font-size: 2rem;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .loading-text {
+    font-size: 1.1rem;
+  }
+  
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .hero-section {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-name.centered,
+  .loading-name.moving-to-top {
+    font-size: 2.8rem;
+  }
+  
+  @keyframes moveNameToTop {
+    0% {
+      font-size: 2.8rem;
+    }
+    100% {
+      font-size: 1.8rem;
+      top: 15px;
+      left: 15px;
+    }
+  }
+  
+  .loading-name.at-top {
+    font-size: 1.8rem;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .loading-text {
+    font-size: 1rem;
+  }
+  
+  .loading-bar {
+    max-width: 300px;
+    height: 4px;
+  }
+}
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
