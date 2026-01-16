@@ -1,5 +1,5 @@
 import React from 'react';
-import myProfileImage from '../assets/me.jpg';
+import myProfileImage from '../assets/mascot.png';
 
 function AboutSection() {
     const techStack = ['React', 'Node.js', 'Python', 'Java', 'C/C++', 'PostgreSQL','MongoDB', 'NLP', 'Spring Boot', 'JUnit', 'MERN Stack', 'Java Swing', '.NET', 'Flask','Git'];
